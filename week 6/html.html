@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <title>Validation</title>
+    <link rel="stylesheet" href="css.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>     
+  
+    <div class ="submit-form" hidden>
+    Thank you for contacting us!
+
+    </div>
+    
+    <form name="contact-form">
+      <div class="form-control">
+        <label>First Name</label>
+        <input name="name"
+          placeholder="First Name" />
+        <div class="error hide">First name is required</div>
+      </div>
+
+      <div class="form-control">
+        <label>Last Name</label>
+        <input
+          name="lastName"
+          placeholder="Last Name"
+        />
+        <div class="error hide">Last name is required</div>
+      </div>
+       
+      
+
+      <div class="form-control">
+        <label>Message</label>
+        <textarea name="message"></textarea>
+        <div class="error hide">Message is required</div>
+      </div>
+
+      <hr />
+
+      <button type="submit">SUBMIT FORM</button>
+    </form>
+
+    <script src="js.js"></script>
+  </body>
+</html>
